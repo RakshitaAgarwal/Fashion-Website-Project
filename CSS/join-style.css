@@ -1,0 +1,78 @@
+/* CSS Reset */
+*{
+    padding:0;
+    margin:0;
+    font-family: "SackersGothicW01-Heavy", Arial, Helvetica, sans-serif;
+    background-color:darkgrey;
+}
+
+:root{
+    font-size: 1vw;
+}
+
+/* Heading */
+h1{
+    font-size: 4rem;
+    font-weight: 200;
+    margin:5rem;
+    color:white;
+}
+
+/* Container */
+#container{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+/* Form */
+#join-form{
+    display:flex;
+    flex-direction:column;
+    background-color: white;
+    margin:0;
+    padding:3rem;
+    box-shadow: 0 3px 3px grey;
+}
+#join-form label{
+    font-size:2rem;
+    margin:1rem;
+    background-color: white;
+    color:#4e4946
+}
+#join-form input{
+    font-size: 1.5rem;
+    margin:1rem 1rem 5rem 1rem;
+    padding: 2rem 0.5rem;
+    border: none;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+#btn{
+    background-color:#4e4946;
+    color:white;
+    font-size:2rem;
+    text-align: center;
+    padding:2rem;
+    border:solid;
+    border:1px solid black;
+    box-shadow: 2px 2px 3px grey;
+    margin:0 8rem;
+}
+#btn:hover{
+    background-color: #504742;
+    box-shadow: 5px 5px 3px grey;;
+}
+
+/* image */
+#right{
+    height:77.4rem;
+    width:50%;
+    box-shadow: 3px 3px 3px grey;
+}
+
+/* Utility Class */
+.center{
+    text-align:center;
+}

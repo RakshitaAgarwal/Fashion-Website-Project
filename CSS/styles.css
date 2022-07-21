@@ -1,0 +1,306 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 5vh;
+    font-size:1vw;
+    line-height: 1.5;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+
+/* for NavBar background */
+#navbar::before{
+    position:absolute;
+    content:"";
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    z-index:-1;
+    opacity:0.3;
+}
+/* Naviagation Bar */
+#navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top:0;
+}
+#navbar-left{
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+}
+/* #navbar-right{
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+} */
+
+/* logo and image */
+#logo{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin: 1rem 1rem 1rem 2rem;
+}
+#logo img{
+    height: 5rem;
+    width: 6.5rem;
+    filter: invert(1);
+}
+
+/* Navigation Bar List styling */
+#navbar ul{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    display:block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+#navbar ul li a:hover{
+    color:darkgrey;
+}
+
+/* Navgation Bar Buttons */
+#login{
+    display:flex;
+    align-items:center;
+    margin:0.5rem 1.25rem 0.5rem 0;
+}
+
+/* background image */
+#about::before{
+    position:absolute;
+    top:0;
+    left:0;
+    content:"";
+    width:100%;
+    height:44rem;
+    z-index:-2;
+    opacity:0.8;
+    background: url('../images/background.jpg') no-repeat center center/cover;
+}
+#about::after{
+    position:absolute;
+    top:0;
+    left:0;
+    content:"";
+    width:100%;
+    height:44rem;
+    z-index:-1;
+    opacity:0.2;
+    background-color: black;
+}
+
+/* About Section */
+#about{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 29rem;
+    padding: 3rem;
+    /* border:2px solid white; */
+    color: rgb(255, 255, 255);
+}
+#about p{
+    width:60vw;
+    text-align:center;
+    padding: 1.5em;
+    font-size:1.5rem;
+}
+
+/* Clients */
+#clients-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    background-color: white;
+    margin:2rem 0;
+    padding:2.5rem 0;
+}
+#clients{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+#clients img{
+    height:2.5rem;
+    padding: 3rem;
+    filter:invert(0.3);
+}
+
+/* Services Container */
+#services-container{
+    /* background-color: #857568; */
+    background-color: #4e4946;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 0;
+}
+#services-container h1{
+    color:white;
+}
+#services{
+    /* background-color: #857568; */
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+#services .box{
+    background-color: white;
+    width:25%;
+    padding:0.8rem;
+    margin:0.8rem;
+    box-shadow: 3px 3px 3px rgb(89, 88, 88);
+    font-size:1vw;
+}
+#services .box img{
+    display:block;
+    margin:auto;
+    padding: 0.8rem;
+    height: 20vw;
+    width: 20vw;
+}
+#services .box p{
+    font-size: 1.25em;
+    padding:0.8rem;
+    margin:0.8rem;
+}
+
+/* Join Us */
+#join-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin:2rem 0rem;
+    padding:0 2rem;
+}
+#join-container img{
+    height: 45rem; 
+    width: 45rem;
+}
+#join{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+#join p{
+    margin:1rem 5rem;
+    font-size:1.5rem;
+    padding: 1.5em;
+}
+#join a{
+    color:black;
+    text-align: center;
+    font-size:1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+#join a:hover{
+    color:rgb(157, 156, 156);
+}
+
+/* Contact Us */
+#contact-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4e4946;
+    color:white;
+}
+#head{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width:80%;
+}
+#contact{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact a img{
+    height:2rem;
+    padding:0.5rem;
+    margin: 0.5rem;
+    filter:invert(1);
+}
+#contact a img:hover{
+    filter:invert(0.75);
+}
+
+#foot{
+    width:85%;
+    color: grey;
+}
+#foot hr{
+    border-style: solid none none none;
+    width: 100%;
+    margin:0.5rem;
+}
+#foot p{
+    padding:1em;
+    text-align:center;
+}
+span{
+    color:rgb(199, 199, 199);
+}
+
+/* Utility Classes */
+.center{
+    text-align:center;
+}
+
+.btn{
+    padding: 0.5em;
+    margin:0.5em 0.5em;
+    background-color:rgb(145, 145, 143);
+    color:white;
+    font-size:1.5rem;
+    border: 0px solid white;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: darkgrey;
+}
+
+.h-primary{
+    font-size: 3.5rem;
+    font-family: "SackersGothicW01-Heavy", Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+.h-secondary{
+    font-size: 2rem;
+    /* font-family: 'Merriweather Sans', sans-serif; */
+    /* font-family: 'Philosopher', sans-serif; */
+    font-family: "SackersGothicW01-Heavy", Arial, Helvetica, sans-serif;
+    padding: 1em;
+}
+
+
+
